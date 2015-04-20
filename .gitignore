@@ -2,3 +2,4 @@
 *.vpprefdata
 *lock
 \tmp
+/bin/
