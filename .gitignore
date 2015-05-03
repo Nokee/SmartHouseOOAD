@@ -2,6 +2,5 @@
 *.vpprefdata
 *lock
 \tmp
-/bin/
-.project
-.lock
+*project
+*lock
