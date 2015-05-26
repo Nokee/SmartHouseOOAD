@@ -1,7 +1,8 @@
 #Smart House OOAD
-
+==================
 
 ##Planirani procesi:
+---------------------
 
 ###temperatura: 
 Sistem omogucava mjerenje temperature u zeljenim prostorijama, te pruza mogucnost manuelnog podesavanja temperature, kao i postavljanje jedne zeljene temperature, nakon cega se ona odrzava.
