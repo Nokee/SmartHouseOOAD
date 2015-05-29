@@ -1,14 +1,14 @@
 #Smart House OOAD
-==================
+<rawtext>
   _____                      _     _   _                        _____  _____  ___ ______ 
 /  ___|                    | |   | | | |                      |  _  ||  _  |/ _ \|  _  \
 \ `--. _ __ ___   __ _ _ __| |_  | |_| | ___  _   _ ___  ___  | | | || | | / /_\ \ | | |
  `--. \ '_ ` _ \ / _` | '__| __| |  _  |/ _ \| | | / __|/ _ \ | | | || | | |  _  | | | |
 /\__/ / | | | | | (_| | |  | |_  | | | | (_) | |_| \__ \  __/ \ \_/ /\ \_/ / | | | |/ / 
 \____/|_| |_| |_|\__,_|_|   \__| \_| |_/\___/ \__,_|___/\___|  \___/  \___/\_| |_/___/ 
-
+</rawtext>
 ##Planirani procesi:
----------------------
+
 
 ###temperatura: 
 Sistem omogucava mjerenje temperature u zeljenim prostorijama, te pruza mogucnost manuelnog podesavanja temperature, kao i postavljanje jedne zeljene temperature, nakon cega se ona odrzava.
