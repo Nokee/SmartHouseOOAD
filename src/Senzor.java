@@ -1,13 +1,17 @@
+
 public abstract class Senzor {
-
-	public Senzor() {
-		// TODO - implement Senzor.Senzor
-		throw new UnsupportedOperationException();
-	}
-
-	public double getValue() {
-		// TODO - implement Senzor.getValue
-		throw new UnsupportedOperationException();
-	}
-
+	
+	/**
+	 * Vrijednost koju daje senzor
+	 */
+	private double Value;
+	
+	public Senzor()
+	{};
+	public double getValue()
+	{
+		return Value;
+	};
+	public void setValue(double Value)
+	{}
 }

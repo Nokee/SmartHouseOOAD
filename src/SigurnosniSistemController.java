@@ -1,5 +1,7 @@
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class SigurnosniSistemController {
 
 	private List<Senzor> senzori;
@@ -8,6 +10,13 @@ public class SigurnosniSistemController {
 		// TODO - implement SigurnosniSistemController.ukljuciKamere
 		throw new UnsupportedOperationException();
 	}
+	
+	
+	public static void main(String[] args )
+	{
+		SigurnosniSistemController r=new SigurnosniSistemController();
+		r.identifikacija(null);
+	}
 
 	/**
 	 * 
@@ -15,7 +24,12 @@ public class SigurnosniSistemController {
 	 */
 	public boolean identifikacija(Korisnik k) {
 		// TODO - implement SigurnosniSistemController.identifikacija
-		throw new UnsupportedOperationException();
+		
+		Login frame=new Login(true);
+		frame.setVisible(true);
+		JOptionPane.showMessageDialog(null, frame.getUsername());;
+		return false;
+		
 	}
 
 	public void idetifikacijaGosta() {

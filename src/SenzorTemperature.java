@@ -4,6 +4,7 @@ public class SenzorTemperature extends Senzor {
 
 	public double getValue() {
 		// TODO - implement SenzorTemperature.getValue
+		
 		throw new UnsupportedOperationException();
 	}
 

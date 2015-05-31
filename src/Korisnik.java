@@ -1,15 +1,31 @@
+
 public class Korisnik extends Osoba {
+	private String password;
 
-	private int indetifikacija;
-
-	public Korisnik() {
-		// TODO - implement Korisnik.Korisnik
-		throw new UnsupportedOperationException();
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
 	}
 
-	public void Indetifikacija() {
-		// TODO - implement Korisnik.Indetifikacija
-		throw new UnsupportedOperationException();
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
 	}
+	
+	
+	/**
+	 * Provjerava identifikaciju korisnika
+	 * @return bool je li uspjesna idetifikacija
+	 */
+	//TODO pokusaj sa Jframe uraditi
+	public boolean identifikacija()
+	{
+		return true;
+	}
+	
 
 }

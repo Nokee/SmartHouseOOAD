@@ -1,7 +1,9 @@
 public class SistemView {
-
+	
 	public void PrikaziStanjeSistema() {
-		// TODO - implement SistemView.PrikaziStanjeSistema
+		
+		
+		
 		throw new UnsupportedOperationException();
 	}
 
