@@ -4,8 +4,8 @@ import java.util.List;
 public class Sistem {
 
 	private SigurnosniSistem Sigurnost;
-	private RegTemperature Temperatura;
-	private List<Uredjaj> Uredjaji;
+	private RegTemp Temperatura;
+	private List<Uredjaji> Uredjaji;
 	private RegulacijaOsvjetljenja Osvjetljenje;
 
 	public void postavkeSistema() {
