@@ -22,15 +22,26 @@ public class SigurnosniSistemController {
 	public boolean identifikacija() {
 		// TODO - implement SigurnosniSistemController.identifikacija
 		
-		Login frame=new Login(true);
-		frame.setVisible(true);
-		JOptionPane.showMessageDialog(null, frame.getUsername());;
-		return false;
+		Login frame=new Login(false);
+		 List<String> a =frame.display(false);
+		if(a.get(0)=="SmartHouseOOAD" && a.get(1)=="SmartHouseOOAD")
+		{
+			JOptionPane.showMessageDialog(null, "Uspjesno ste prijavljeni");
+			return true;
+		}
+		else return false;
 		
 	}
 
 	public boolean idetifikacijaGosta() {
-		return Math.random()>0.5;
+		Login frame=new Login(true);
+		 List<String> a =frame.display(true);
+		if(a.get(0)=="SmartHouseOOAD" && a.get(1)=="SmartHouseOOAD")
+		{
+			JOptionPane.showMessageDialog(null, "Uspjesno ste prijavljeni");
+			return true;
+		}
+		else return false;
 	}
 
 	public double mjerenjeTemperature() {

@@ -9,11 +9,15 @@ public class Sistem {
 	private RegulacijaOsvjetljenja Osvjetljenje;
 
 	public void postavkeSistema() {
+		Uredjaji.add(new TV());
+		Uredjaji.add(new Tus());
+		Uredjaji.add(new Zaluzine());
+		Uredjaji.add(new Sat());
 		
 	}
 
 	public void StandAlone() {
-		// TODO - implement Sistem.StandAlone
+		
 		
 	}
 

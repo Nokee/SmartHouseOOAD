@@ -1,8 +1,7 @@
 public class SistemController {
 
 	public void PostaviSistem() {
-		// TODO - implement SistemController.PostaviSistem
-		throw new UnsupportedOperationException();
+		
 	}
 
 	public void UkljuciStandAlone() {

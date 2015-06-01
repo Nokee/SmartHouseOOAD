@@ -3,7 +3,6 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import javax.swing.JButton;
 
 import java.awt.event.ActionListener;
@@ -13,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 
 import java.awt.Color;
+import java.util.List;
+
 import javax.swing.JPasswordField;
 import javax.swing.JOptionPane;
 
@@ -25,6 +26,7 @@ public class Login extends JFrame {
 	private String sifra;
 	private boolean jeligost;
 	private JPasswordField passwordField;
+	private List<String> a;
 	
 	public String getUsername()
 	{
@@ -43,11 +45,11 @@ public class Login extends JFrame {
 	/**
 	 * Prikazuje display.
 	 */
-	/*public static void main(String arg[]) {
+	public List<String> display(final boolean gost) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Login frame = new Login(true);
+					Login frame = new Login(gost);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					
@@ -56,7 +58,14 @@ public class Login extends JFrame {
 				}
 			}
 		});
-	}*/
+		a = null;
+		a.add(getUsername());
+		a.add(getsifra());
+		a.add(String.valueOf(jeligost));
+		
+		
+		return a;
+	}
 	
 	/**
 	 * Create the frame.
