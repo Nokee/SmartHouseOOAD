@@ -1,23 +1,31 @@
 public class SigurnosniSistemView {
 
-	public RecordDate prikaziKamera() {
-		// TODO - implement SigurnosniSistemView.prikaziKamera
-		throw new UnsupportedOperationException();
+	
+	public void prikaziKamera(TV t) {
+		t.prikazSigurnosiKamera();
+		
 	}
 
+	/**
+	 * Zove policiju u slucaju provalnika
+	 */
 	public void pozoviPoliciju() {
-		// TODO - implement SigurnosniSistemView.pozoviPoliciju
-		throw new UnsupportedOperationException();
+		//send()
 	}
 
+	/**
+	 * Zove vatrogasce u slucaju pozara
+	 */
 	public void pozoviVatrogasce() {
-		// TODO - implement SigurnosniSistemView.pozoviVatrogasce
-		throw new UnsupportedOperationException();
+
+		//send()
 	}
 
+	/**
+	 * Salje sms poruku o opasnosti
+	 */
 	public void obavjestiKorisnika() {
-		// TODO - implement SigurnosniSistemView.obavjestiKorisnika
-		throw new UnsupportedOperationException();
+		//send
 	}
 
 }

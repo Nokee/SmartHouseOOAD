@@ -1,13 +1,23 @@
-public class Zaluzine extends Uredjaj {
-
-	public void otvoriZaluzine() {
-		// TODO - implement Zaluzine.otvoriZaluzine
-		throw new UnsupportedOperationException();
+public class Zaluzine extends Uredjaji {
+	
+	public Zaluzine()
+	{
+		uredjaj=UREDJAJ.Zaluzine;
 	}
 
+	/**
+	 * salje informaciju microkontrolleru da obavi zadatak
+	 */
+	public void otvoriZaluzine() {
+		//send
+	}
+
+
+	/**
+	 * salje informaciju microkontrolleru da obavi zadatak
+	 */
 	public void zatvoriZaluzine() {
-		// TODO - implement Zaluzine.zatvoriZaluzine
-		throw new UnsupportedOperationException();
+		//send
 	}
 
 }

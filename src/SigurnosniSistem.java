@@ -5,39 +5,59 @@ public class SigurnosniSistem {
 	private RecordDate recorde;
 	private List<Osoba> prisustvo;
 	private boolean potvrdaIdetifikacije;
+	public SigurnosniSistemView V;
+	
 
 	public void snimiKamera() {
-		// TODO - implement SigurnosniSistem.snimiKamera
-		throw new UnsupportedOperationException();
+		recorde.kamera();
+		
+		
 	}
 
 	public int odrediBrojPrisnutni() {
-		// TODO - implement SigurnosniSistem.odrediBrojPrisnutni
-		throw new UnsupportedOperationException();
+		return prisustvo.size();
 	}
 
 	/**
 	 * 
 	 * @param t
 	 */
-	public boolean opasnostOdPozara(double t) {
-		// TODO - implement SigurnosniSistem.opasnostOdPozara
-		throw new UnsupportedOperationException();
+	public boolean opasnostOdPozara(SigurnosniSistemController s) 
+	{
+		if( s.procjenaOpasnostiStanje()>2) 
+		{
+			paljenjeProtivPozarnogSistema();
+			V.pozoviVatrogasce();
+			V.obavjestiKorisnika();
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean opasnostOdProvalnika(SigurnosniSistemController s) {
+		if( s.procjenaOpasnostiStanje()==1) 
+		{
+			if(s.identifikacija() || s.idetifikacijaGosta())
+				{
+				 return false;
+				};
+			
+			V.pozoviPoliciju();
+			V.obavjestiKorisnika();
+			return true;
+		}
+		return false;
+		
 	}
 
-	public boolean opasnostOdProvalnika() {
-		// TODO - implement SigurnosniSistem.opasnostOdProvalnika
-		throw new UnsupportedOperationException();
-	}
-
+	/**
+	 * Slanje informacije o paljenju protivpozarnog sistema
+	 */
 	public void paljenjeProtivPozarnogSistema() {
-		// TODO - implement SigurnosniSistem.paljenjeProtivPozarnogSistema
-		throw new UnsupportedOperationException();
+		//send()
+		
 	}
 
-	public void procjenaOpasnosti() {
-		// TODO - implement SigurnosniSistem.procjenaOpasnosti
-		throw new UnsupportedOperationException();
-	}
+	
 
 }

@@ -2,27 +2,24 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+
 public class SigurnosniSistemController {
+	private  int TEMP=40;
+	private int INFRA=50;
 
 	private List<Senzor> senzori;
-
-	public void ukljuciKamere() {
-		// TODO - implement SigurnosniSistemController.ukljuciKamere
-		throw new UnsupportedOperationException();
-	}
 	
-	
-	public static void main(String[] args )
+	public SigurnosniSistemController()
 	{
-		SigurnosniSistemController r=new SigurnosniSistemController();
-		r.identifikacija(null);
+		senzori.add(new SenzorOsvjetljenja());
+		senzori.add(new SenzorPritiska());
+		senzori.add(new SenzorTemp());
+		
 	}
 
-	/**
-	 * 
-	 * @param k
-	 */
-	public boolean identifikacija(Korisnik k) {
+	
+	
+	public boolean identifikacija() {
 		// TODO - implement SigurnosniSistemController.identifikacija
 		
 		Login frame=new Login(true);
@@ -32,19 +29,46 @@ public class SigurnosniSistemController {
 		
 	}
 
-	public void idetifikacijaGosta() {
-		// TODO - implement SigurnosniSistemController.idetifikacijaGosta
-		throw new UnsupportedOperationException();
+	public boolean idetifikacijaGosta() {
+		return Math.random()>0.5;
 	}
 
 	public double mjerenjeTemperature() {
-		// TODO - implement SigurnosniSistemController.mjerenjeTemperature
-		throw new UnsupportedOperationException();
+		return Math.random()*23;
 	}
 
 	public double mjerenjePritiska() {
 		// TODO - implement SigurnosniSistemController.mjerenjePritiska
 		throw new UnsupportedOperationException();
+	}
+	/**
+	 * procjena opasnosti i poduzimanje odgovarajuci mjera
+	 * @param s
+	 */
+    public void procjenaOpasnosti(SigurnosniSistem s) {
+    	if (mjerenjeTemperature()>TEMP)
+    		s.paljenjeProtivPozarnogSistema();
+    	if(mjerenjeOsvjetljenja()>INFRA)
+    	{
+    		if(!identifikacija()|| !idetifikacijaGosta())
+    		s.opasnostOdProvalnika(this);
+    	}
+    }
+
+    public int procjenaOpasnostiStanje()
+    {
+    	
+    	return (int) (3*Math.random());
+    }
+    	
+		
+	
+
+
+
+	private int mjerenjeOsvjetljenja() {
+		
+		return 0;
 	}
 
 }

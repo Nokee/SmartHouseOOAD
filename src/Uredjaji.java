@@ -1,6 +1,10 @@
 public class Uredjaji {
 	
 	
+	public enum  UREDJAJ {Frizider,Sat,TV,Tus,Zaluzine};
+	
+	UREDJAJ uredjaj;
+	
 	/**
 	 * Salje mikrokontroleru o ukljucivanju uredjaja
 	 */

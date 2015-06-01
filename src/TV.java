@@ -1,13 +1,23 @@
-public class TV extends Uredjaj {
 
-	public void promjenaKanala() {
-		// TODO - implement TV.promjenaKanala
-		throw new UnsupportedOperationException();
+
+public class TV extends Uredjaji {
+	
+	public TV(){
+		uredjaj=UREDJAJ.TV;
 	}
 
+	/**
+	 * salje informaciju microkontrolleru o promjeni kanala
+	 */
+	public void promjenaKanala(int brojKanala) {
+		//send(brojKanala);
+	}
+
+	/**
+	 * salje informaciju microkontrolleru o promjeni kanala
+	 */
 	public void prikazSigurnosiKamera() {
-		// TODO - implement TV.prikazSigurnosiKamera
-		throw new UnsupportedOperationException();
+		//send()
 	}
 
 }

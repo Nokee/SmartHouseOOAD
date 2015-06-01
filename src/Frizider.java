@@ -1,8 +1,10 @@
-public class Frizider extends Uredjaj {
+public class Frizider extends Uredjaji {
 
-	public void PodesiTemperaturu() {
-		// TODO - implement Frizider.PodesiTemperaturu
-		throw new UnsupportedOperationException();
+	/**
+	 * Salje informaciju
+	 */
+	public void PodesiTemperaturu(double t) {
+		//send()
 	}
 
 }

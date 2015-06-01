@@ -1,14 +1,17 @@
 public class UredjajView {
 
-	public RecordDate PrikaziStanjeUredjaja() {
-		return null;
-		// TODO - implement UredjajView.PrikaziStanjeUredjaja
-		
+	public RecordDate PrikaziStanjeUredjaja(UredjajController u) {
+		return new RecordDate(u);
 	}
-
+	
 	public int PrikaziUsteduEnergije() {
-		return 0;
-		// TODO - implement UredjajView.PrikaziUsteduEnergije
+		return (int) (2*Math.random()+1);
+	}
+	
+	/**
+	 * Ispisuje sve podatke vezane za sistem
+	 */
+	public void display(){
 		
 	}
 

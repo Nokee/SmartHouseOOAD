@@ -1,15 +1,21 @@
 public class SistemView {
 	
+	/**
+	 * Prikazuje interfejs o stanju sistema
+	 */
 	public void PrikaziStanjeSistema() {
 		
 		
 		
-		throw new UnsupportedOperationException();
+		
 	}
 
+	/**
+	 * Vrsi obavjestavanje korisnika u vidu slanja sms poruka
+	 */
 	public void ObavjestavajKorisnika() {
 		// TODO - implement SistemView.ObavjestavajKorisnika
-		throw new UnsupportedOperationException();
+		
 	}
 
 }

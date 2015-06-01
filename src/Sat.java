@@ -1,13 +1,25 @@
-public class Sat extends Uredjaj {
+import java.sql.Time;
 
-	public void PrikaziVrijeme() {
-		// TODO - implement Sat.PrikaziVrijeme
-		throw new UnsupportedOperationException();
+public class Sat extends Uredjaji {
+	
+	public Sat(){
+		uredjaj=UREDJAJ.Sat;
 	}
-
-	public void PostaviAlarm() {
-		// TODO - implement Sat.PostaviAlarm
-		throw new UnsupportedOperationException();
+	
+	
+	public Time PrikaziVrijeme() {
+		Time t =new Time(0);
+		t.getTime();
+		return t;
+		
+	}
+	/**
+	 * Salje inforamciju mikrokontroleri
+	 * @param h sati
+	 * @param min minute
+	 */
+	public void PostaviAlarm(int h, int min) {
+		//send(h,min);
 	}
 
 }
