@@ -6,10 +6,14 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+
 import java.awt.Color;
+
 import javax.swing.JButton;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.util.List;
 
 
 public class StanjeSistema extends JFrame {
@@ -23,11 +27,23 @@ public class StanjeSistema extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public void display(final double d, final double e,  final int f,int i) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					StanjeSistema frame = new StanjeSistema();
+					frame.textField.setText(String.valueOf(d));
+					frame.textField_1.setText(String.valueOf(e));
+					switch(f)
+					{
+					case 1:frame.textField_2.setText("ODLICNO");
+					break;
+					case 2:frame.textField_2.setText("DOBRO");
+					break;
+					default:frame.textField_2.setText("LOSE");
+					break;
+					
+					}
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
